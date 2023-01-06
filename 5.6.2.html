@@ -1,0 +1,71 @@
+<html>
+    <body>
+        <script>
+
+            let punkte = 0;
+
+            let eingabe1 = Number(prompt("wie viel ist 2 + 44 ?"));
+            if (eingabe1 == 46){
+                (document.write("1: richtig , "));
+                punkte++;
+            }
+            else {
+                (document.write("1: falsch , "))
+            }
+
+            let eingabe2 = Number(prompt("wie viel ist 21 + 45 ?"));
+            if (eingabe2 == 66){
+                (document.write("2: richtig , "));
+                punkte++;
+            }
+            else {
+                (document.write("2: falsch , "))
+            }
+
+            let eingabe3 = Number(prompt("wie viel ist 0 + 10 ?"));
+            if (eingabe3 == 10){
+                (document.write("3: richtig , "));
+                punkte++;
+            }
+            else {
+                (document.write("3: falsch , "))
+            }
+
+            let eingabe4 = Number(prompt("wie viel ist 22 * 2 ?"));
+            if (eingabe4 == 44){
+                (document.write("4: richtig , "));
+                punkte++;
+            }
+            else {
+                (document.write("4: falsch , "))
+            }
+
+            let eingabe5 = Number(prompt("wie viel ist 65 + 35 ?"));
+            if (eingabe5 == 100){
+                (document.write("5: richtig , "));
+                punkte++;
+            }
+            else {
+                (document.write("5: falsch , "))
+            }
+
+            switch (punkte){
+                case 0:
+                case 1:
+                    alert ("schlecht gerechnet");
+                    break;
+                case 2:
+                case 3:
+                    alert ("nicht schlecht, weiter so!");  
+                    break; 
+                case 4:
+                    alert ("sehr gut!");
+                    break;
+                case 5: 
+                    alert ("wunderbar!");
+                    break;
+            }
+
+        </script>
+    </body>
+</html>
