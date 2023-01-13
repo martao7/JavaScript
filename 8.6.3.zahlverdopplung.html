@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+
+            function verdopplung(array) {
+                for (let i = 0; i < array.length; i++) {
+                    array[i] *= 2;
+                }
+                return array;
+            }
+
+            let arraySet = [];
+
+            for (let n = 0; n <3; n++) {
+                arraySet[n] = prompt("Gebe eine Zahl: ");
+            }
+
+            arraySet = verdopplung(arraySet);
+            document.write("Die doppelte Werte: " + arraySet);
+
+
+        </script>
+    </body>
+</html>
