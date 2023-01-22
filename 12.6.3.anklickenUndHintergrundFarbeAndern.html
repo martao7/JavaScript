@@ -1,0 +1,72 @@
+<html>
+    <body>
+        <div id = "d">Testseite
+            <p id = "p">Hier befindet sich mein Text
+                <i id = "i">
+                    mit einem kursiven Bereich, der ein
+                    <strong id = "s">
+                        fettgedrucktes
+                    </strong>
+                    Wort enthalt 
+                </i>
+                und durch drauf klicken seine Hintergrundfarbe wechselt.
+            </p>
+        </div>
+        <script>
+            let zahler = 0;
+            
+            function divTag() {
+                if (zahler == 0) {
+                    this.style.backgroundColor = 'lightblue';
+                    zahler++;
+                }
+                else if (zahler == 1) {
+                    this.style.backgroundColor = 'pink';
+                    zahler = 0;
+                    event.stopPropagation();
+                }
+            }
+            d.onclick = divTag;
+
+            function pTag() {
+                if (zahler == 0) {
+                    this.style.backgroundColor = 'lightblue';
+                    zahler++;
+                }
+                else if (zahler == 1) {
+                    this.style.backgroundColor = 'pink';
+                    zahler = 0;
+                    event.stopPropagation();
+                }
+            }
+            p.onclick = pTag;
+
+            function iTag() {
+                if (zahler == 0) {
+                    this.style.backgroundColor = 'lightblue';
+                    zahler++;
+                }
+                else if (zahler == 1) {
+                    this.style.backgroundColor = 'pink';
+                    zahler = 0;
+                    event.stopPropagation();
+                }
+            }
+            i.onclick = iTag;
+
+            function strongTag() {
+                if (zahler == 0 ) {
+                    this.style.backgroundColor = 'lightblue';
+                    zahler++;
+                }
+                else if (zahler == 1) {
+                    this.style.backgroundColor = 'pink';
+                    zahler = 0;
+                    event.stopPropagation();
+                }
+            }
+            s.onclick = strongTag;
+
+        </script>
+    </body>
+</html>
