@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>Aufgabe 2</h1>
+        <h2>Sehr gut, Sie haben die erste Aufgabe richtig gelost!</h2><br><br>
+        <button onclick="aufgabe()">Aufgabe 2</button>
+        <script>
+            function aufgabe() {
+                let a = Math.floor(Math.random() * 49 + 51);
+                let b = Math.floor(Math.random() * 49 + 1);
+                let ergebnis = prompt("Was ist das Ergebnis aus " + a + " - " + b + "?");
+                if (ergebnis == a - b) {
+                    window.open("13.4.1.3.html");
+                    window.close();
+                }
+                else {
+                    alert("Falsches Erebnis!");
+                }
+            }
+            
+        </script>
+    </body>
+</html>

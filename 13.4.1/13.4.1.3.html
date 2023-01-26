@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h1>Aufgabe 3</h1>
+        <h2>Super! Du hast die Aufgabe 2 richtig gelost!</h2><br><br>
+        <button onclick="aufgabe()">Aufgabe 3</button>
+        <script>
+            function aufgabe() {
+                let a = Math.floor(Math.random() * 9 + 1);//Divisor
+                let b = Math.floor(Math.random() * 49 + 1);//Ergebnis
+                let ergebnis = prompt("Was ist das Ergebnis aus " + a * b + "/" + a + "?");
+                if (ergebnis == b) {
+                    alert("Herzlichen Gluckwunsch! Alle Aufgaben richtig gelost! :) ");
+                    window.close();
+                }
+                else {
+                    alert("Falsches Ergebnis! :( ");
+                }
+            }
+        </script>
+    </body>
+</html>

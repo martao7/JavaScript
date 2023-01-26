@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <h1>Das ist ein Mathe-Quiz!</h1><br><br>
+        <button onclick="aufgabe()">Aufgabe 1</button>
+        <script>
+
+            function aufgabe() {
+            let a = Math.floor(Math.random() * 9 + 1);
+            let b = Math.floor(Math.random() * 9 + 1);
+            let ergebnis = prompt("Was ist das Ergebnis aus " + a + " + " + b + "?");
+
+            if (ergebnis == a + b) {
+                window.open("13.4.1.2.html");
+            } 
+            else {
+                alert("Falsches Ergebnis!");
+            }
+        }
+
+        </script>
+    </body>
+</html>
