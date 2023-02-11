@@ -1,0 +1,56 @@
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    background-image: url("laptop.jpeg");
+    text-align: center;
+    font-size: 80px;
+    color:black;
+}
+
+.item h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+#qualifikations {
+    background-color: skyblue;
+}
+
+#skills {
+    background-color: skyblue;
+    
+}
+
+#language {
+    background-color: skyblue;
+}
+
+.menu, .footer {
+    background-color: rgb(193, 200, 201);
+    padding: 10px;
+    text-align:center;
+    font-family: sans-serif;
+    position: relative;
+    }
+
+#laptop-photo{
+    height: 400px;
+    width: 600px;
+    position: relative;
+}
+
+p{
+    font-size: 17px;
+    margin: 20px;
+    line-height: 20px;
+}
+
+
+    
