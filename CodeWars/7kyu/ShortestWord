@@ -1,0 +1,24 @@
+
+// DESCRIPTION:
+
+// Simple, given a string of words, return the length of the shortest word(s).
+
+// String will never be empty and you do not need to account for different data types.
+
+
+
+function findShort(s){
+
+    var s = s.split(' ');
+    var words = []; 
+    var shortest = 0;
+
+    for (let i = 0; i < s.length; ++i){
+        words = s[i];
+
+    if (shortest == 0 || words.length < shortest){
+        shortest = words.length;
+      }        
+    }
+  return shortest;
+}
