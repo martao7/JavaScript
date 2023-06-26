@@ -1,0 +1,31 @@
+// Your task is simply to count the total number of lowercase letters in a string.
+
+// Examples
+
+// lowercaseCount("abc"); ===> 3
+
+// lowercaseCount("abcABC123"); ===> 3
+
+// lowercaseCount("abcABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"); ===> 3
+
+// lowercaseCount(""); ===> 0;
+
+// lowercaseCount("ABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"); ===> 0
+
+// lowercaseCount("abcdefghijklmnopqrstuvwxyz"); ===> 26
+
+
+
+function lowercaseCount(str){
+  
+  let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+  
+  let sum = 0;
+  
+  for (let letter of str) {
+    if (alphabet.includes(letter)) {
+      sum += 1;
+    }
+  }
+  return sum;
+}
