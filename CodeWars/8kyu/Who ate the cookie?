@@ -24,3 +24,24 @@ function cookie(x){
     return "Who ate the last cookie? It was the dog!"
   }
 }
+
+
+
+----------------> my another solution with switch statement ----->
+
+function cookie(x){
+  
+  let y = x + "";
+  let z = Number(x);
+  
+  switch (x) {
+      case y:
+      return "Who ate the last cookie? It was Zach!";
+      
+      case z:
+      return "Who ate the last cookie? It was Monica!";
+      
+      default:
+      return "Who ate the last cookie? It was the dog!";
+ }             
+}
