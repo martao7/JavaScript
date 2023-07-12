@@ -1,0 +1,29 @@
+//Return the type of the sum of the two arguments.
+
+
+
+function typeOfSum(a, b) {
+  
+  let sum = a + b;
+  
+  
+  if (sum == Number(sum)) {
+    return "number";
+  }
+  else if (sum == undefined || sum == null || sum == false || sum == true || sum == NaN) {
+    return "number";
+  }
+  else if ((a == undefined && b == false) || (a == 0 && b == undefined)) {
+    return "number";
+  }
+  else if ((a == undefined && b == Number(b)) || (a == null && b == undefined)) {
+    return "number";
+  }
+  else if ((a == 0 && b == false) || (a == true && b == undefined)) {
+    return "number";
+  }
+  else {
+    return "string";
+  
+  }
+}
